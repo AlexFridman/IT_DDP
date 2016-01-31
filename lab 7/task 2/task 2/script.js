@@ -3,7 +3,7 @@ function checkType(value, type) {
 }
 
 function checkTypes(f, type) {
-    return function() {
+    return function () {
         for (var i = 0; i < arguments.length; i++) {
             if (!checkType(arguments[i], type)) {
                 alert("Incorrect argument type of " + arguments[i]);

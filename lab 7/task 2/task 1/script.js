@@ -3,7 +3,7 @@ function checkNumber(value) {
 }
 
 function typeCheck(f) {
-    return function() {
+    return function () {
         if (arguments.length > 0) {
             if (!checkNumber(arguments[0])) {
                 alert("Argument is not a number");

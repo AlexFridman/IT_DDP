@@ -52,8 +52,8 @@ function isRectangle(a, b, c, d) {
 
 function isRectangleAnyOrder(a, b, c, d) {
     return isRectangle(a, b, c, d) ||
-           isRectangle(b, c, a, d) ||
-           isRectangle(c, a, b, d);
+        isRectangle(b, c, a, d) ||
+        isRectangle(c, a, b, d);
 }
 
 
@@ -99,7 +99,7 @@ function isPointBelongsToRectangle(p, rectangle) {
     maxY = Math.max(rectangle[0].y, rectangle[1].y, rectangle[2].y, rectangle[3].y);
 
     return p.x >= minX && p.x <= maxX &&
-    	   p.y >= minY && p.y <= maxY;
+        p.y >= minY && p.y <= maxY;
 }
 
 rectangle = promtRectangle();
