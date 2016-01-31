@@ -45,5 +45,7 @@ RunningTask.prototype = Object.create(Task.prototype, {
 RunningTask.prototype.constructor = RunningTask;
 
 var task = new RunningTask("My title", "descr", new Date(), new Date(), null, 78, false);
-task.addSubtask(new Task("My title", "descr", new Date(), new Date(), null))
-alert(task.title);
+task.addSubtask(new Task("My title", "descr", new Date(), new Date(), null));
+
+console.log(task.title);
+console.log(task.subtasks);

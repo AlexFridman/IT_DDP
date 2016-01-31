@@ -6,7 +6,7 @@ function checkTypes(f, type) {
     return function () {
         for (var i = 0; i < arguments.length; i++) {
             if (!checkType(arguments[i], type)) {
-                alert("Incorrect argument type of " + arguments[i]);
+                console.log("Incorrect argument type of " + arguments[i]);
                 return;
             }
         }
@@ -21,6 +21,6 @@ function sumOfThree(a, b, c) {
 
 sumOfThree = checkTypes(sumOfThree, 'number');
 
-alert(sumOfThree(1, 2, 3));
+console.log(sumOfThree(1, 2, 3));
 
-alert(sumOfThree(1, 2, 'pp'));
+console.log(sumOfThree(1, 2, 'pp'));

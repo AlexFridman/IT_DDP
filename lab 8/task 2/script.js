@@ -20,4 +20,4 @@ function quicksort (arr, cmp) {
 	return quicksort(lesser).concat(equal.concat(quicksort(greather)));
 }
 
-alert(quicksort([8, 4, 2, 0, 9, 7, 6, 3, 5, 1]));
+console.log(quicksort([8, 4, 2, 0, 9, 7, 6, 3, 5, 1]));

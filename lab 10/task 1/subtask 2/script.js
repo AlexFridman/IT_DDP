@@ -20,7 +20,11 @@ class RunningTask extends Task {
         this.complete = complete;
         this.done = done;
     }
+
+    setDone(){
+        this.done = true;
+    }
 }
 
 var task = new RunningTask("My title", "descr", new Date(), new Date(), null, 78, false);
-alert(task.title);
+console.log(task.title);

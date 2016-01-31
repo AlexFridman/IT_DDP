@@ -51,9 +51,9 @@ function sum(matrix1, matrix2) {
 }
 
 matrix1 = createMatrix(2, 2);
-alert(output(matrix1));
+console.log(output(matrix1));
 
 matrix2 = createMatrix(2, 2);
-alert(output(matrix2));
+console.log(output(matrix2));
 
-alert(output(sum(matrix1, matrix2)));
+console.log(output(sum(matrix1, matrix2)));

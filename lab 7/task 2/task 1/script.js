@@ -6,7 +6,7 @@ function typeCheck(f) {
     return function () {
         if (arguments.length > 0) {
             if (!checkNumber(arguments[0])) {
-                alert("Argument is not a number");
+                console.log("Argument is not a number");
                 return;
             }
         }
@@ -21,6 +21,6 @@ function sum(a, b) {
 
 sum = typeCheck(sum);
 
-alert(sum(1, 2)); // 3
+console.log(sum(1, 2)); // 3
 
 sum(true, null); // incorrect argument

@@ -26,7 +26,7 @@ function range(start, stop, step) {
     return array;
 }
 
-alert(range(1, 10));
-alert(range(1, 10, 2));
-alert(range(1, 10, -1));
-alert(range(5, 2, -1));
+console.log(range(1, 10));
+console.log(range(1, 10, 2));
+console.log(range(1, 10, -1));
+console.log(range(5, 2, -1));

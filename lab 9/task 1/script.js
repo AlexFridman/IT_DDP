@@ -25,7 +25,7 @@ function Vector(x, y, z) {
 };
 
 v = new Vector(1, 2, 3);
-alert(v);
-alert(v.plus(v));
-alert(v.scalar(v));
-alert(v.valueOf());
+console.log(v);
+console.log(v.plus(v));
+console.log(v.scalar(v));
+console.log(v.valueOf());
