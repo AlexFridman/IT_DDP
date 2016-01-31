@@ -2,24 +2,56 @@
 <html>
 <head>
     <title>JavaScript Programming</title>
-    
+    <style type="text/css" media="screen">
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .code {
+            font-family: monospace;
+            line-height: 3pt;
+        }
+
+        th,
+        td {
+            padding: 15px;
+        }
+
+        .class_row {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 16pt;
+            line-height: 10pt;
+        }
+
+        .schedule_full_row {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 24pt;
+        }
+
+        table {
+            font-size: 10pt;
+            padding: 10pt;
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body>
 
-<table width="70%"  border="1px" bordercolor="#RRGGBB" align="center" cellpadding="10px" bgcolor="#dddddd">
+<table>
     <thead>
-    <tr>
+    <tr class="schedule_full_row">
         <th colspan="4">
-           <h1> ISsoft: Training JavaScript
-		   </h1>
+            ISsoft: Training JavaScript
         </th>
     </tr>
     </thead>
     <tbody>
     <tr>
-        <th colspan="4" >
-            <p align=left >
-			   <font color="RED">
+        <th colspan="4">
+            <p>
                 It is a long established fact that a reader will be distracted by the readable content of a page when
                 looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
                 of letters, as opposed to using 'Content here,
@@ -30,10 +62,8 @@
                 humour and the like). Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
                 a piece of classical Latin literature
                 from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor
-				</font>
             </p>
-            <p align=left>
-			    <font color="RED">
+            <p>
                 at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from
                 a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
                 undoubtable source. Lorem Ipsum comes
@@ -47,14 +77,13 @@
                 1914 translation by H. Rackham. There are many variations of passages of Lorem Ipsum available, but the
                 majority have suffered alteration
                 in some form,
-				</font>
             </p>
         </th>
     </tr>
     <tr>
         <th colspan="4">
             <div align="center">
-                <table>
+                <table class="code">
                     <tbody>
                     <tr>
                         <td width="100%">
@@ -109,57 +138,48 @@
             </div>
         </th>
     </tr>
-    <tr>
-        <th colspan="4">
-			<table align=center width=100% border="1px" bordercolor="RED">
-				<h4>Plan</h4>
-					<tr>
-					<td width=25%>#</td>
-                    <td width=25%>Date</td>
-                    <td width=25%>Subject</td>
-                    <td width=25%>Description</td>
-					</tr>
-					<tr>
-					<td>1</td>
-					<td>01.10.2016</td>
-					<td>Introduction</td>
-					<td>Introduction</td>
-					</tr>
-					<tr>
-					<td>2</td>
-					<td>06.10.2016</td>
-					<td>Data types in JS</td>
-					<td>Data types in JS</td>
-					</tr>
-					<tr>
-					<td>2</td>
-					<td>06.10.2016</td>
-					<td>Data types in JS</td>
-					<td>Data types in JS</td>
-					</tr>
-					<tr>
-					<td>2</td>
-					<td>06.10.2016</td>
-					<td>Data types in JS</td>
-					<td>Data types in JS</td>
-					</tr>
-			</table>		
-		</th>
+    <tr class="schedule schedule_full_row">
+        <th colspan="4">Plan</th>
     </tr>
-    
-    
-	</tbody>
-	<tfoot>
-	   <tr>
-	     <th colspan="4">
-	         <div align=left>
-                <p><strong>IsSoft training center</strong></p>
-                <p>&copy; IsSoft</p>
-             </div>
-	     </th>
-	    </tr>
-	</tfoot>
-    
+    <tr class="schedule class_row">
+        <td>#</td>
+        <td>Date</td>
+        <td>Subject</td>
+        <td>Description</td>
+    </tr>
+    <tr class="schedule class_row">
+        <td>1</td>
+        <td>01.10.2016</td>
+        <td>Introduction</td>
+        <td>Introduction</td>
+    </tr>
+    <tr class="schedule class_row">
+        <td>2</td>
+        <td>06.10.2016</td>
+        <td>Data types in JS</td>
+        <td>Data types in JS</td>
+    </tr>
+    <tr class="schedule class_row">
+        <td>2</td>
+        <td>06.10.2016</td>
+        <td>Data types in JS</td>
+        <td>Data types in JS</td>
+    </tr>
+    <tr class="schedule class_row">
+        <td>2</td>
+        <td>06.10.2016</td>
+        <td>Data types in JS</td>
+        <td>Data types in JS</td>
+    </tr>
+    </tbody>
 </table>
 </body>
+<footer>
+    <div class="footer-bg">
+        <div class="copyright">
+            <p><strong>IsSoft training center</strong></p>
+            <p>&copy; IsSoft</p>
+        </div>
+    </div>
+</footer>
 </html>
