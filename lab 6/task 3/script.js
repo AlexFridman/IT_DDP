@@ -34,5 +34,4 @@ function fibonacci(n) {
 n = promptInt('Enter n')
 
 
-
 alert(fibonacci(n));
