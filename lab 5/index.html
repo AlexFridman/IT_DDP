@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Programming</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <style>
+        /* -----------   PICTURE  ----------- */
+
+        div.image {
+            cursor: pointer;
+            position: relative;
+            text-align: center;
+        }
+
+        div.image:before {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            box-shadow: 0 0 10px #A0A9B1 inset;
+            content: attr(data-title);
+            font-family: Tahoma;
+            font-size: 32px;
+            height: 48px;
+            line-height: 48px;
+            opacity: 0;
+            padding: 0 10px;
+            position: absolute;
+            right: 50px;
+            top: 20px;
+            -moz-transition: all 1s;
+            -webkit-transition: all 1s;
+            -o-transition: all 1s;
+            transition: all 1s;
+        }
+
+        div.image:hover:before {
+            right: 160px;
+            opacity: 1;
+            top: 140px;
+        }
+
+        div.image img {
+            width: 400px;
+            -moz-transition: all 1s;
+            -webkit-transition: all 1s;
+            -o-transition: all 1s;
+            transition: all 1s;
+        }
+
+        div.image:hover img {
+            width: 500px;
+        }
+
+        div.image:after {
+            content: attr(data-zagolovok);
+            display: block;
+            font-weight: bold;
+            font-family: Helvetica;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        ul.dropdown li {
+            position: relative;
+        }
+
+        ul.dropdown,
+        ul.dropdown-inside {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.dropdown-inside {
+            position: absolute;
+            left: -9999px;
+        }
+
+        ul.dropdown li.dropdown-top {
+            display: inline;
+            float: left;
+            margin: 0 1px 0 0;
+        }
+
+        ul.dropdown li.dropdown-top a {
+            padding: 3px 10px 4px;
+            display: block;
+        }
+
+        ul.dropdown a.dropdown-top {
+            background: #efefef;
+        }
+
+        ul.dropdown a.dropdown-top:hover {
+            padding: 2px 10px 5px;
+        }
+
+        ul.dropdown li.dropdown-top:hover .dropdown-inside {
+            display: block;
+            left: 0;
+        }
+
+        ul.dropdown .dropdown-inside {
+            background: #fff;
+        }
+
+        ul.dropdown .dropdown-inside a:hover {
+            background: #efefef;
+        }
+    </style>
+</head>
+
+<body>
+<div class="image" data-title="как Вам?" data-zagolovok="это какая-то собака">
+    <img src="dog.jpg"/>
+</div>
+
+<ul class="dropdown">
+    <li class="dropdown-top">
+        <a class="dropdown-top" href="/">Британия</a>
+        <ul class="dropdown-inside">
+            <li><a href="/">Лондон</a></li>
+            <li><a href="/">Бирмингем</a></li>
+            <li><a href="/">Лидс</a></li>
+            <li><a href="/">Шеффилд</a></li>
+            <li><a href="/">Манчестер</a></li>
+        </ul>
+    </li>
+
+    <li class="dropdown-top">
+        <a class="dropdown-top" href="/">США</a>
+        <ul class="dropdown-inside">
+            <li><a href="/">Нью-Йорк</a></li>
+            <li><a href="/">Лос-Анжелес</a></li>
+            <li><a href="/">Чикаго</a></li>
+            <li><a href="/">Хьюстон</a></li>
+            <li><a href="/">Филадельфия</a></li>
+            <li><a href="/">Финикс</a></li>
+            <li><a href="/">Сан-Антонио</a></li>
+        </ul>
+    </li>
+
+    <li class="dropdown-top">
+        <a class="dropdown-top" href="/">Франция</a>
+        <ul class="dropdown-inside">
+            <li><a href="/">Париж</a></li>
+            <li><a href="/">Марсель</a></li>
+            <li><a href="/">Лион</a></li>
+            <li><a href="/">Тулуза</a></li>
+            <li><a href="/">Ницца</a></li>
+            <li><a href="/">Нант</a></li>
+            <li><a href="/">Страссбург</a></li>
+        </ul>
+    </li>
+
+    <li class="dropdown-top">
+        <a class="dropdown-top" href="/">Испания</a>
+        <ul class="dropdown-inside">
+            <li><a href="/">Мадрид</a></li>
+            <li><a href="/">Барселона</a></li>
+            <li><a href="/">Валенсия</a></li>
+            <li><a href="/">Севилья</a></li>
+        </ul>
+    </li>
+
+    <li class="dropdown-top">
+        <a class="dropdown-top" href="/">Италия</a>
+        <ul class="dropdown-inside">
+            <li><a href="/">Рим</a></li>
+            <li><a href="/">Милан</a></li>
+            <li><a href="/">Неаполь</a></li>
+            <li><a href="/">Турин</a></li>
+            <li><a href="/">Палермо</a></li>
+        </ul>
+    </li>
+</ul>
+
+
+</body>
