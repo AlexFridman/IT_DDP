@@ -2,35 +2,51 @@
 <html>
 <head>
     <title>JavaScript Programming</title>
-    
+    <style type="text/css" media="screen">
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .form {
+            width: 70%;
+            align-content: center;
+        }
+
+        table.main {
+            width: 100%;
+        }
+
+    </style>
 </head>
-<body bgcolor="#cccccc">
-<table width="70%" align=center border="1px" bordercolor="GREEN" cellpadding="10px" bgcolor="ffffff">
+<body>
+<table class="main">
     <thead>
-    <tr>
-	    <th>
-            
-                <img width="400px" height="200px" src="logo.png" alt=""/>
-        </th>
-        <th >
-            <h1>ISsoft: Training JavaScript</h1>
+    <tr class="schedule_full_row">
+        <th colspan="2">
+            ISsoft: Training JavaScript
         </th>
     </tr>
     </thead>
     <tbody>
     <tr>
-        
         <th colspan="2">
+            <div class="logo">
+                <img width="400px" height="200px" src="logo.png" alt=""/>
+            </div>
+            <div>
                 <video width="400" height="300" controls="controls">
                     <source src="">
                 </video>
-            
+            </div>
         </th>
     </tr>
     <tr>
-        <th colspan="2">
+        <th>
             <div align="center">
-                <table>
+                <table class="form">
                     <tbody>
                     <tr>
                         <th colspan="2">Form</th>
@@ -81,7 +97,7 @@
                             <table>
                                 <tbody>
                                 <tr>
-                                    <td width= 5%>
+                                    <td style="width: 5%">
                                         <select>
                                             <option>Skill</option>
                                             <option>Code</option>
@@ -89,7 +105,7 @@
                                             <option>Design</option>
                                         </select>
                                     </td>
-                                    <td width= 5%>
+                                    <td style="width: 5%">
                                         <select>
                                             <option>Level</option>
                                             <option>0</option>
@@ -102,7 +118,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td width= 5%>
+                                    <td style="width: 5%">
                                         <select>
                                             <option>Skill</option>
                                             <option>Code</option>
@@ -110,7 +126,7 @@
                                             <option>Design</option>
                                         </select>
                                     </td>
-                                    <td width= 5%>
+                                    <td style="width: 5%">
                                         <select>
                                             <option>Level</option>
                                             <option>0</option>
@@ -123,7 +139,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td width= 5%>
+                                    <td style="width: 5%">
                                         <select>
                                             <option>Skill</option>
                                             <option>Code</option>
@@ -153,15 +169,14 @@
         </th>
     </tr>
     </tbody>
-	<tfoot >
-		<tr >
-		<th colspan="2" align=left valign=bottom >
-            <p><strong>IsSoft training center</strong></p>
-            <p>&copy; IsSoft</p>
-        </th>
-		</tr>
-	</tfoot>
 </table>
 </body>
-
+<footer>
+    <div class="footer-bg">
+        <div class="copyright">
+            <p><strong>IsSoft training center</strong></p>
+            <p>&copy; IsSoft</p>
+        </div>
+    </div>
+</footer>
 </html>
