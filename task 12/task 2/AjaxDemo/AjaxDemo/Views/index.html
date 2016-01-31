@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Ajax Demo</title>
+    <meta charset="utf-8" />
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        #load {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody id="result"></tbody>
+    </table>
+    <button id="load">Load People</button>
+    <script>
+        $(document).ready(function () {
+            $('#load').click(function (e) {
+                e.preventDefault();
+                $.ajax({
+                    url: "http://localhost:32639/Values",
+                    dataType: 'json',
+                    type: 'GET',
+                    success: function (result) {
+                        var resStr = '';
+                        for (var i = 0; i < result.length; i++) {
+                            resStr += '<tr>' +
+                                '<th>' + (i + 1) + '</th>' +
+                                '<th>' + result[i].Name + '</th>' +
+                                '<th>' + result[i].Age + '</th>' +
+                                '</tr>';
+                        }
+                        $('#result').html(resStr);
+                    },
+                    error: function (m) {
+                        alert(m.valueOf());
+                    }
+                });
+                $('#load').hide();
+            });
+        });
+    </script>
+</body>
+</html>
