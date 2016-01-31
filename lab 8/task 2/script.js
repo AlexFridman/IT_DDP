@@ -12,11 +12,11 @@ function quicksort (arr, cmp) {
 	if (arr.length <= 1) {
 		return arr
 	}
-	cmp = cmp || intCmp
+	cmp = cmp || intCmp;
 	var lesser = arr.filter(x => cmp(x, arr[0]) == -1);
 	var equal = arr.filter(x => cmp(x, arr[0]) == 0);
 	var greather = arr.filter(x => cmp(x, arr[0]) == 1);
-	
+
 	return quicksort(lesser).concat(equal.concat(quicksort(greather)));
 }
 
