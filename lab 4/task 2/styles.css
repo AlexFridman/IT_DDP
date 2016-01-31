@@ -37,126 +37,135 @@ br {
     clear: left;
 }
 
+p, h1, form, button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
 
-p, h1, form, button{border:0; margin:0; padding:0;}
 form {
     height: 430px;
 }
-.spacer{clear:both; height:1px;}
+
+.spacer {
+    clear: both;
+    height: 1px;
+}
+
 /* ----------- FORM LAYOUT ----------- */
-#form_wrapper
-{
-    margin:0 auto;
-    height:auto;
-    width:500px;
-    padding:14px;
-    border:solid 10px #7F9B4E;
-    background:#f4f8ef;
+#form_wrapper {
+    margin: 0 auto;
+    height: auto;
+    width: 500px;
+    padding: 14px;
+    border: solid 10px #7F9B4E;
+    background: #f4f8ef;
 
 }
 
-.col-1
-{
+.col-1 {
 
-    width:30%;
-    float:left;
-}
-.col-2
-{
-    width:65%;
-    float:right;
+    width: 30%;
+    float: left;
 }
 
-.col-2-1
-{
-    width:65%;
-    float:right;
+.col-2 {
+    width: 65%;
+    float: right;
 }
-.col-2-2
-{
-    width:65%;
-    float:right;
+
+.col-2-1 {
+    width: 65%;
+    float: right;
+}
+
+.col-2-2 {
+    width: 65%;
+    float: right;
 }
 
 /* -----------FORM LAYOUT  ----------- */
 
-#form_wrapper h1
-{
-    font-size:24px;
-    font-weight:bold;
-    margin-bottom:8px;
-    text-align:center;
+#form_wrapper h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
 }
-#form_wrapper p{
-    font-size:12px;
-    color:#666666;
-    margin-bottom:20px;
-    padding-bottom:10px;
-    text-align:center;
-}
-#form_wrapper label{
 
-    margin-bottom:28px;
-    font-weight:bold;
-    text-align:right;
-    display:block;
+#form_wrapper p {
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: center;
 }
-#form_wrapper .small{
-    color:#666666;
-    font-size:11px;
-    font-weight:normal;
-    text-align:right;
-    display:block;
+
+#form_wrapper label {
+
+    margin-bottom: 28px;
+    font-weight: bold;
+    text-align: right;
+    display: block;
 }
-#form_wrapper input{
-    margin-bottom:15px;
-    font-size:12px;
-    padding:5px 2px;
-    border:solid 2px #738f47;
-    width:100%;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.1),inset 0 3px 2px rgba(0,0,0,0.1);
+
+#form_wrapper .small {
+    color: #666666;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: right;
+    display: block;
+}
+
+#form_wrapper input {
+    margin-bottom: 15px;
+    font-size: 12px;
+    padding: 5px 2px;
+    border: solid 2px #738f47;
+    width: 100%;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), inset 0 3px 2px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-    font-weight:bold;
+    font-weight: bold;
 }
 
-#form_wrapper input[type="radio"]
-{
-    margin-bottom:30px;
-    border:1px solid black;
-    width:15px;
+#form_wrapper input[type="radio"] {
+    margin-bottom: 30px;
+    border: 1px solid black;
+    width: 15px;
 }
-#form_wrapper select
-{
-    padding:5px 2px;
-    width:45%;
-    border:solid 2px #738f47;
-    margin-bottom:5px;
+
+#form_wrapper select {
+    padding: 5px 2px;
+    width: 45%;
+    border: solid 2px #738f47;
+    margin-bottom: 5px;
 }
-#form_wrapper input:focus{
-    background-color:#738f47;
+
+#form_wrapper input:focus {
+    background-color: #738f47;
 }
-#form_wrapper button
-{
-    clear:both;
-    margin-left:90px;
-    width:125px;
-    height:31px;
-    background:#7F9B4E;
-    text-align:center;
-    line-height:31px;
-    color:#FFFFFF;
-    font-size:11px;
-    font-weight:bold;
-    margin-top:10px;
+
+#form_wrapper button {
+    clear: both;
+    margin-left: 90px;
+    width: 125px;
+    height: 31px;
+    background: #7F9B4E;
+    text-align: center;
+    line-height: 31px;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 10px;
 }
-#form_wrapper button:hover
-{
-    background-color:#fff;
-    color:black;
-    border:1px solid green;
-    cursor:pointer;
+
+#form_wrapper button:hover {
+    background-color: #fff;
+    color: black;
+    border: 1px solid green;
+    cursor: pointer;
 }
