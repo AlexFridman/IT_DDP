@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Programming</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <style type="text/css" media="screen">
+        .form {
+            width: 70%;
+            align-content: center;
+            text-align: center;
+        }
+
+        table.main {
+            width: 100%;
+        }
+
+        .div-table {
+            display: table;
+            width: auto;
+            background-color: #eee;
+            border: 1px solid #666666;
+        }
+
+        .div-table-row {
+            display: table-row;
+            width: auto;
+            clear: both;
+        }
+
+        .div-table-col {
+            float: left;
+            display: table-column;
+            width: 100px;
+        }
+
+        .div-table-col1 {
+            float: left;
+            display: table-column;
+            width: 150px;
+            border: 1px solid #666666;
+        }
+
+        .div-table-col2 {
+            float: left;
+            display: table-column;
+            width: 300px;
+            background-color: #ccc;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .video {
+            text-align: center;
+        }
+
+        .formLayout {
+            background-color: #f3f3f3;
+            border: solid 1px #a1a1a1;
+            padding: 10px;
+            width: 300px;
+        }
+
+        .formLayout label, .formLayout input {
+            display: block;
+            width: 120px;
+            float: left;
+            margin-bottom: 10px;
+        }
+
+        .formLayout label {
+            text-align: right;
+            padding-right: 20px;
+        }
+
+        br {
+            clear: left;
+        }
+
+    </style>
+</head>
+<body>
+<div class="logo">
+    <img width="400" height="300" src="logo.png" alt=""/>
+</div>
+<div class="video">
+    <video width="400" height="300" controls="controls">
+        <source src="">
+    </video>
+</div>
+
+<div id="form_wrapper">
+    <form id="form" name="form" method="post" action="index.html">
+        <h1>Sign-up form</h1>
+        <p>FLEXIBLE FRAMEWORK FOR FORMS IN CSS WITHOUT TABLE</p>
+
+        <div class="col-1">
+
+            <label>Name
+                <span class="small">Enter Full Name</span>
+            </label>
+
+            <label>Email
+                <span class="small">Add a valid address</span>
+            </label>
+
+            <label>Password
+                <span class="small">Min. size 6 chars</span>
+            </label>
+
+            <label>Gender
+                <span class="small">Enter your gender</span>
+            </label>
+
+            <label>Country
+                <span class="small">Enter your country</span>
+            </label>
+        </div>
+        <div class="col-2">
+
+            <input type="text" name="name" id="name"/>
+
+            <input type="text" name="email" id="email"/>
+
+            <input type="text" name="password" id="password"/>
+
+            <input type="radio" name="password" id="password"/> Male
+            <input type="radio" name="password" id="password"/>Female
+
+            <select>
+                <option>Country1</option>
+                <option>Country2</option>
+            </select>
+        </div>
+
+        <center>
+            <button type="submit">Sign-up</button>
+        </center>
+
+    </form>
+
+</div>
+
+
+</body>
+<footer>
+    <div class="footer-bg">
+        <div class="copyright">
+            <p><strong>IsSoft training center</strong></p>
+            <p>&copy; IsSoft</p>
+        </div>
+    </div>
+</footer>
+</html>

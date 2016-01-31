@@ -1,4 +1,47 @@
+/* ----------- PAGE LAYOUT ----------- */
+.form {
+    width: 70%;
+    align-content: center;
+    text-align: center;
+}
+
+.logo {
+    text-align: center;
+    padding: 20px;
+}
+
+.video {
+    text-align: center;
+}
+
+.formLayout {
+    background-color: #f3f3f3;
+    border: solid 1px #a1a1a1;
+    padding: 10px;
+    width: 300px;
+}
+
+.formLayout label, .formLayout input {
+    display: block;
+    width: 120px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.formLayout label {
+    text-align: right;
+    padding-right: 20px;
+}
+
+br {
+    clear: left;
+}
+
+
 p, h1, form, button{border:0; margin:0; padding:0;}
+form {
+    height: 430px;
+}
 .spacer{clear:both; height:1px;}
 /* ----------- FORM LAYOUT ----------- */
 #form_wrapper
@@ -24,6 +67,17 @@ p, h1, form, button{border:0; margin:0; padding:0;}
     float:right;
 }
 
+.col-2-1
+{
+    width:65%;
+    float:right;
+}
+.col-2-2
+{
+    width:65%;
+    float:right;
+}
+
 /* -----------FORM LAYOUT  ----------- */
 
 #form_wrapper h1
@@ -42,7 +96,7 @@ p, h1, form, button{border:0; margin:0; padding:0;}
 }
 #form_wrapper label{
 
-    margin-bottom:18px;
+    margin-bottom:28px;
     font-weight:bold;
     text-align:right;
     display:block;
@@ -72,16 +126,15 @@ p, h1, form, button{border:0; margin:0; padding:0;}
 #form_wrapper input[type="radio"]
 {
     margin-bottom:30px;
-
     border:1px solid black;
     width:15px;
 }
 #form_wrapper select
 {
     padding:5px 2px;
-    width:100%;
+    width:45%;
     border:solid 2px #738f47;
-    margin-bottom:15px;
+    margin-bottom:5px;
 }
 #form_wrapper input:focus{
     background-color:#738f47;
@@ -89,7 +142,7 @@ p, h1, form, button{border:0; margin:0; padding:0;}
 #form_wrapper button
 {
     clear:both;
-    margin-left:50px;
+    margin-left:90px;
     width:125px;
     height:31px;
     background:#7F9B4E;
@@ -98,6 +151,7 @@ p, h1, form, button{border:0; margin:0; padding:0;}
     color:#FFFFFF;
     font-size:11px;
     font-weight:bold;
+    margin-top:10px;
 }
 #form_wrapper button:hover
 {

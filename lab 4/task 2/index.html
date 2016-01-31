@@ -3,86 +3,10 @@
 <head>
     <title>JavaScript Programming</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
-    <style type="text/css" media="screen">
-        .form {
-            width: 70%;
-            align-content: center;
-            text-align: center;
-        }
-
-        table.main {
-            width: 100%;
-        }
-
-        .div-table {
-            display: table;
-            width: auto;
-            background-color: #eee;
-            border: 1px solid #666666;
-        }
-
-        .div-table-row {
-            display: table-row;
-            width: auto;
-            clear: both;
-        }
-
-        .div-table-col {
-            float: left;
-            display: table-column;
-            width: 100px;
-        }
-
-        .div-table-col1 {
-            float: left;
-            display: table-column;
-            width: 150px;
-            border: 1px solid #666666;
-        }
-
-        .div-table-col2 {
-            float: left;
-            display: table-column;
-            width: 300px;
-            background-color: #ccc;
-        }
-
-        .logo {
-            text-align: center;
-        }
-
-        .video {
-            text-align: center;
-        }
-
-        .formLayout {
-            background-color: #f3f3f3;
-            border: solid 1px #a1a1a1;
-            padding: 10px;
-            width: 300px;
-        }
-
-        .formLayout label, .formLayout input {
-            display: block;
-            width: 120px;
-            float: left;
-            margin-bottom: 10px;
-        }
-
-        .formLayout label {
-            text-align: right;
-            padding-right: 20px;
-        }
-
-        br {
-            clear: left;
-        }
-
-    </style>
 </head>
 <body>
 <div class="logo">
-    <img width="400" height="300" src="logo.png" alt=""/>
+    <img width="300" height="100" src="logo.png" alt=""/>
 </div>
 <div class="video">
     <video width="400" height="300" controls="controls">
@@ -92,50 +16,84 @@
 
 <div id="form_wrapper">
     <form id="form" name="form" method="post" action="index.html">
-        <h1>Sign-up form</h1>
-        <p>FLEXIBLE FRAMEWORK FOR FORMS IN CSS WITHOUT TABLE</p>
+        <h1>Form</h1>
+        <p>PLEASE FILL ALL THE FIELDS</p>
 
         <div class="col-1">
 
-            <label>Name
-                <span class="small">Enter Full Name</span>
-            </label>
+            <label>Name</label>
 
-            <label>Email
-                <span class="small">Add a valid address</span>
-            </label>
+            <label>University</label>
 
-            <label>Password
-                <span class="small">Min. size 6 chars</span>
-            </label>
+            <label>Speciality</label>
 
-            <label>Gender
-                <span class="small">Enter your gender</span>
-            </label>
-
-            <label>Country
-                <span class="small">Enter your country</span>
-            </label>
+            <label>Type</label>
+            
+            <label>Skills</label>
         </div>
         <div class="col-2">
 
-            <input type="text" name="name" id="name"/>
+            <input type="text"/>
 
-            <input type="text" name="email" id="email"/>
+            <input type="text"/>
 
-            <input type="text" name="password" id="password"/>
+            <input type="text"/>
 
-            <input type="radio" name="password" id="password"/> Male
-            <input type="radio" name="password" id="password"/>Female
-
+            <input type="radio"/>Dipl
+            <input type="radio"/>Trud<br>
+            
             <select>
-                <option>Country1</option>
-                <option>Country2</option>
+                <option>Skill</option>
+                <option>Code</option>
+                <option>Web</option>
+                <option>Design</option>
             </select>
+            
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            
+            <select>
+                <option>Skill</option>
+                <option>Code</option>
+                <option>Web</option>
+                <option>Design</option>
+            </select>
+            
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            
+            <select>
+                <option>Skill</option>
+                <option>Code</option>
+                <option>Web</option>
+                <option>Design</option>
+            </select>
+            
+            <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            
         </div>
 
         <center>
-            <button type="submit">Sign-up</button>
+            <button type="submit">Done</button>
         </center>
 
     </form>
