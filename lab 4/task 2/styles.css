@@ -138,6 +138,16 @@ form {
     width: 15px;
 }
 
+#form_wrapper input[type="file"] {
+    margin-bottom: 15px;
+    font-size: 12px;
+    padding: 5px 2px;
+    border: none;
+    width: 100%;
+    box-shadow: none;
+    font-weight: bold;
+}
+
 #form_wrapper select {
     padding: 5px 2px;
     width: 45%;
