@@ -65,7 +65,7 @@ class MessageGetter(threading.Thread):
                 print()
                 for message in messages:
                     print('[{login}] {text}'.format(**message))
-                sleep(self.__timeout)
+            sleep(self.__timeout)
 
     def terminate(self):
         self.__working = False
